@@ -13,20 +13,18 @@
   }
 
   .cards:hover .card {
-    transform: translateX(-25%);
+    transform: translateX(-5%);
   }
 
   .card:hover ~ .card {
-    transform: translateX(25%);
+    transform: translateX(5%);
   }
 
   .cards {
     display: flex;
     overflow-x: scroll;
     padding: 18px 28px;
-    height: 200px;
-    width: 100%;
-    align-items: center;
+    height: 250px;
 
     .card {
       height: 150px;

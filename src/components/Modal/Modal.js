@@ -17,7 +17,12 @@ export const Modal = ({ setShowModal, movie }) => {
             alt={`${movie.title} image`}
           />
         </div>
-        <span>{movie.title}</span>
+        <span className="movie-title">
+          {movie.name ||
+            movie.title ||
+            movie.original_title ||
+            movie.original_name}
+        </span>
         <div className="movie-overview">{movie.overview}</div>
       </div>
     </div>

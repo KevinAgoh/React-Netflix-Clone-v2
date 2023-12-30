@@ -24,9 +24,12 @@ function Row({ title, fetchUrl, isLargeRow }) {
     <div className="row">
       <h2>{title}</h2>
       <div className="cards">
-        {movies.map((movie) => (
-          <MovieTile movie={movie} isLargeRow={isLargeRow} key={movie.id} />
-        ))}
+        {movies.map(
+          (movie) =>
+            movie.backdrop_path && (
+              <MovieTile movie={movie} isLargeRow={isLargeRow} key={movie.id} />
+            )
+        )}
       </div>
     </div>
   );

@@ -19,9 +19,7 @@ const MovieTile = ({ movie, isLargeRow }) => {
       <img
         className="card-image"
         src={`${BASE_URL}${
-          isLargeRow
-            ? movie.poster_path
-            : movie.backdrop_path || movie.poster_path
+          isLargeRow ? movie.poster_path : movie.backdrop_path
         }`}
         alt={`${BASE_URL}${movie.name}`}
         key={movie.id}
